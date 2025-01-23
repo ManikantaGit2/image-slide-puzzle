@@ -1,0 +1,59 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+  background-color: darksalmon;
+}
+h1{
+    color: white;
+}
+
+.container {
+  display: inline-block;
+  position: relative;
+  margin: 20px auto;
+}
+
+.puzzle {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-gap: 2px;
+  border: 2px solid #444;
+}
+
+.tile {
+  width: 100px;
+  height: 100px;
+  background-size: 300px 300px;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #999;
+  cursor: pointer;
+  user-select: none;
+  transition: transform 0.2s;
+}
+
+.tile.empty {
+  background: #ddd;
+  border: none;
+  cursor: default;
+}
+
+.tile:hover:not(.empty) {
+  transform: scale(1.05);
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+ img{
+    margin-left: 50px;
+ }
